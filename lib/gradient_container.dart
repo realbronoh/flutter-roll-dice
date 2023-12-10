@@ -11,6 +11,13 @@ class GradientContainer extends StatelessWidget {
     required this.colors,
   });
 
+  const GradientContainer.yellow({
+    super.key,
+  }) : colors = const [
+          Colors.yellow,
+          Colors.black,
+        ];
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,7 +28,12 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(child: StyledText("Hello Hello Flutter!")),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-1.png',
+          width: 200,
+        ),
+      ),
     );
   }
 }
