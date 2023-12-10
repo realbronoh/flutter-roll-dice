@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: Text('Hello World!')));
+  runApp(const MaterialApp(home: Text('Hello World!')));
+  // "const" will optimize runtime performance by store the Widget in memory
+  // blue line of vscode suggests to use const
 }
